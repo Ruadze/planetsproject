@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planet </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="index.js" defer></script>
+</head>
+<body style="background-image: url(background-stars.svg);">
+    <header>
+        <h1>THE PLANETS</h1>
+        <button class="burger"><img src="icon-burger.svg" alt="burger"></button>
+        <ul class="burger-bts-list">
+            <li class="planets"><div class="color-list Mercury"></div><a class="planets-link"  href="#">MERCURY</a></li>
+            <hr class="header-hr">
+            <li class="planets"><div class="color-list VENUS"></div><a class="planets-link"  href="#">VENUS</a></li>
+            <hr class="header-hr">
+            <li class="planets"><div class="color-list EARTH"></div><a class="planets-link"  href="#">EARTH</a></li>
+            <hr class="header-hr">
+            <li class="planets"><div class="color-list MARS"></div><a class="planets-link"  href="#">MARS</a></li>
+            <hr class="header-hr">
+            <li class="planets"><div class="color-list JUPITER"></div><a class="planets-link"  href="#">JUPITER</a></li>
+            <hr class="header-hr">
+            <li class="planets"><div class="color-list SATURN"></div><a  class="planets-link" href="#">SATURN</a></li>
+            <hr class="header-hr">
+            <li class="planets"><div class="color-list URANUS"></div><a class="planets-link"  href="#">URANUS</a></li>
+            <hr class="header-hr">
+            <li class="planets"><div class="color-list NEPTUNE"></div><a class="planets-link" href="#">NEPTUNE</a></li>
+            <hr class="header-hr">
+        </ul>
+        <ul class="planets-list">
+            <li class="planetss active">MERCURY</li>
+            <li class="planetss">VENUS</li>
+            <li class="planetss">EARTH</li>
+            <li class="planetss">MARS</li>
+            <li class="planetss">JUPITER</li>
+            <li class="planetss">SATURN</li>
+            <li class="planetss">URANUS</li>
+            <li class="planetss">NEPTUNE</li>
+        </ul>
+    </header>
+    <hr>
+    <!-- middle -->
+    
+    <div class="group">
+        <div class="main-info">
+            <ul>
+            <button class="info"><li>OVERVIEW</li></button>
+            <button class="info"><li>STRUCTURE</li></button>
+            <button class="info"><li>SURFACE</li></button>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- main part -->
+    <main>
+<div class="main-img">
+    <div id="img"></div>
+</div>
+<div class="last-part">
+    <div class="details">
+       <div id="planet-description"></div>
+       <span class="source">source: <a href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+        class="wiki">wikipedia<img class="source-icon" src="icon-source.svg" alt=""></a></span>
+    </div>
+   <div class="div">
+       <div>
+           <button id="overview-btn" class="information"><span class="numbers"><b>01</span> OVERVIEW</b></button>
+           <button id="structure-btn" class="information"><span class="numbers"><b>02</span> INTERNAL STRUCTURE</b></button>
+           <button id="geology-btn" class="information"><span class="numbers"><b>03</span> SURFACE GEOLOGY</b></button>
+       </div>
+</div>
+</div>  
+    </main>
+
+    <div class="last-div">
+        <div class="finally"><b><span class="names-1">ROTATION TIME</span></b><span id="rotation"></span></div>
+        <div class="finally"><b><span class="names-1">REVOLUTION TIME</span></b><span id="revolution"></span></div>
+        <div class="finally"><b><span class="names-1">RADIUS</span></b><span id="radius"></span></div>
+        <div class="finally"><b><span class="names-1">AVERAGE TEMP.</span></b><span id="temperature"></span></div>
+    </div>
+    </div>
+</body>
+</html>
